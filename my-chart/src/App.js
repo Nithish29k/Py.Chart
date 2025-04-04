@@ -1,4 +1,5 @@
 import React from "react";
+import Chatbot from "./Chatbot";
 
 const App = () => {
   return (
@@ -43,7 +44,7 @@ const App = () => {
 />
 </div> */}
 
-  <div style={{ textAlign: "center", marginTop: "20px" }}>
+  {/* <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h2>Crops Distribution by Average Rainfall</h2>
       <iframe
         src="http://localhost:5000/piechart2"
@@ -55,17 +56,9 @@ const App = () => {
           borderRadius: "8px",
         }}
       />
-    </div>
-
-    {/* <div style={{ textAlign: "center" }}>
-      <h2>Hover chart</h2>
-      
-      <img
-        src="http://localhost:5000/HoverChart"
-        alt="Crops Distribution Chart"
-        style={{ width: "600px", border: "2px solid #333" }}
-      />
     </div> */}
+
+    <Chatbot/>
 </div>
     
   );

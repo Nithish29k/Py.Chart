@@ -26,7 +26,7 @@ def generate_pie_chart():
             hoverinfo='label+percent',
             textinfo='label',
             marker=dict(colors=colors),
-          
+          # pull=[0.1 if crop == 'banana' else 0 for crop in crops]  # Example: Emphasize 'apple'
         )
     ])
 
