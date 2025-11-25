@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/chart4')
 def generate_chart():
-    # Sample Data
+ 
     x = [1, 2, 3, 4, 5, 6]
     y = [2, 4, 1, 5, 2, 6]
 
@@ -32,10 +32,10 @@ def generate_chart():
         hovermode='x unified',  # Enable hover on x-axis
     )
 
-    # Convert chart to HTML (removing download & plot link options)
+    # Convert chart to HTML 
     chart_html = fig.to_html(full_html=False, include_plotlyjs='cdn', config={"displayModeBar": False})
 
-    # Return HTML with embedded chart
+    # Return HTML 
     return render_template_string("""
     <!DOCTYPE html>
     <html lang="en">
