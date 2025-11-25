@@ -24,12 +24,12 @@ def generate_chart():
     # Add legend
     plt.legend()
 
-    # Save the image to a bytes buffer
+    # Save the image 
     img = io.BytesIO()
     plt.savefig(img, format='png')
     img.seek(0)
 
-    # Clear the plot to prevent overlap in multiple requests
+    
     plt.clf()
 
     return send_file(img, mimetype='image/png')
