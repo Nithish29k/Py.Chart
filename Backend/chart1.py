@@ -4,7 +4,7 @@ import io
 
 app = Flask(__name__)
 
-# 📌 First Chart (Line Chart with Markers)
+# First Chart 
 @app.route('/chart1')
 def generate_chart1():
     x = [1, 2, 3, 4, 5, 6]
@@ -26,7 +26,7 @@ def generate_chart1():
     plt.clf()  # Clear plot to avoid overlapping
     return send_file(img, mimetype='image/png')
 
-# 📌 Second Chart (Two Line Graphs)
+# Second Chart 
 @app.route('/chart2')
 def generate_chart2():
     x1, y1 = [1, 2, 3], [2, 4, 1]
